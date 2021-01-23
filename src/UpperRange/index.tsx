@@ -15,6 +15,7 @@ interface IProps {
     keyLabel?: string;
     valueLabel?: string;
     inputLength: number;
+    isUpperBound?: boolean;
 }
 
 const UpperRange = ({
@@ -26,6 +27,7 @@ const UpperRange = ({
     options,
     placeholder,
     inputLength = 12,
+    isUpperBound = true,
     keyLabel = "name",
     valueLabel = "value"
 }: IProps) => {
@@ -102,7 +104,7 @@ const UpperRange = ({
         <div className={style["upper-range-wrapper"]} onBlur={handleInputBlur}>
             {title && <span className={classNames(style["title"], style["secondary"])}>{title}</span>}
             <div className={style["filter-select"]}>
-                <label>تا</label>
+                <label>{!!isUpperBound ? "تا" : "از"}</label>
                 <input 
                     autoComplete="off"
                     id={id}
@@ -136,3 +138,4 @@ const UpperRange = ({
 
 
 export default UpperRange;
+

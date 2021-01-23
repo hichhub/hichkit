@@ -3,6 +3,7 @@
     box-sizing: border-box;
     .decimal-input{
         height: 100%;
+        -webkit-user-select: text;
     }
     .active {
         outline: none !important;
@@ -23,6 +24,7 @@
         >span {
             display: block;
             padding: 12px 8px;
+            cursor: pointer;
         }
     }
     .invisible {
@@ -118,3 +120,4 @@
 .upper-range-wrapper {
     flex-grow: 1;
 }
+
