@@ -3,20 +3,20 @@ import style  from "./style.module.scss"
 import classNames from "classnames";
 import Numeral from "numeral";
 
-interface IProps {
-    id: string;
-    title?: string;
-    zeroValueLabel: string;
-    currentValue?: number;
-    handleValueChange?: any;
-    handleClick?: any;
-    options: Array<any>;
-    placeholder?: string;
-    keyLabel?: string;
-    valueLabel?: string;
-    inputLength: number;
-    isUpperBound?: boolean;
-}
+// interface IProps {
+//     id: string;
+//     title?: string;
+//     zeroValueLabel: string;
+//     currentValue?: number;
+//     handleValueChange?: any;
+//     handleClick?: any;
+//     options: Array<any>;
+//     placeholder?: string;
+//     keyLabel?: string;
+//     valueLabel?: string;
+//     inputLength: number;
+//     isUpperBound?: boolean;
+// }
 
 const UpperRange = ({
     id,
