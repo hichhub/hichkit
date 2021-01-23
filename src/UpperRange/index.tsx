@@ -30,7 +30,8 @@ const UpperRange = ({
     isUpperBound = true,
     keyLabel = "name",
     valueLabel = "value"
-}: IProps) => {
+}//: IProps
+) => {
 
     const [isActive, setActive] = useState(false)
     const [isStoppedBubbling, setStoppedBubbling] = useState(false)
