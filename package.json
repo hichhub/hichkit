@@ -6,7 +6,8 @@
   "license": "MIT",
   "dependencies": {
     "numeral": "^2.0.6",
-    "react": "^17.0.1"
+    "react": "^17.0.1",
+    "typescript": "3.4.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
