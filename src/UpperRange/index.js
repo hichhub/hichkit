@@ -35,7 +35,7 @@ const UpperRange = ({
 
     const [isActive, setActive] = useState(false)
     const [isStoppedBubbling, setStoppedBubbling] = useState(false)
-    const inputRef = createRef() as any;
+    const inputRef = createRef()// as any;
     const optionsRef = useRef(null);
 
     useEffect(() => {
@@ -70,7 +70,7 @@ const UpperRange = ({
         handleValueChange(postProcess(value))
     }
 
-    const postProcess = (rawValue: string) => {
+    const postProcess = (rawValue) => {//: string
         //pemit only digits
         const digits = rawValue.replace(/[^1234567890۱۲۳۴۵۶۷۸۹۰١٢٣٤٥٦٧٨٩٠]/gi, '')
         if (digits.length > inputLength){
@@ -81,7 +81,7 @@ const UpperRange = ({
         return Number(latinDigits)
     }
 
-    const preProcess = (value: number) => {
+    const preProcess = (value) => {//: number
         if (!value){
             return ""
         }
