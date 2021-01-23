@@ -1,6 +1,6 @@
 {
-  "name": "hichkit",
-  "version": "0.1.0",
+  "name": "@hichhub/hichkit",
+  "version": "0.1.1",
   "main": "build/index.js",
   "repository": "https://github.com/hichhub/hichkit.git",
   "license": "MIT",
@@ -17,5 +17,5 @@
   "scripts": {
     "build": "babel src -d build",
     "prepare": "yarn run build"
-   }
+  }
 }
