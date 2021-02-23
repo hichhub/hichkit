@@ -1,8 +1,7 @@
 {
-  "name": "@hichhub/hichkit",
+  "name": "@hichestan/hichkit",
   "version": "0.1.1",
-  "main": "build/index.js",
-  "repository": "https://github.com/hichhub/hichkit.git",
+  "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "numeral": "^2.0.6",
